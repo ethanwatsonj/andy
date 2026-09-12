@@ -1,0 +1,33 @@
+# Andy
+
+> A personal design system. Headless React, Geist type, Linear craft.
+
+## Install in other projects
+
+```bash
+npx shadcn@latest registry add @andy=https://andy.vercel.app/r/{name}.json
+npx shadcn@latest add @andy/theme @andy/button
+```
+
+## Principles
+
+- Craft is the product. Spacing, type, and states are the work.
+- Decide before decorating.
+- Neutral does the work. Color is punctuation. Primary is blue 700 (`#3B66E0`).
+- Dual chrome: floating tools are dense and elevated; content surfaces are quiet.
+- Suggest, never assume.
+- Three radii: 4 / 8 / 12. Spacing on a 4pt grid.
+- Motion is short: 100–120ms ease-out hovers.
+- Keyboard is first-class.
+- Use semantic tokens (`bg-primary`, `text-muted-foreground`). Never raw `bg-blue-500`.
+- Forms use FieldGroup + Field. Items live in their Group.
+- Base UI uses `render={}` not `asChild`.
+
+## Foundations
+
+- Colors: `/colors`
+- Typography: Geist Sans + Geist Mono, `/typography`
+- Materials: `/materials`
+- Components: `/components`
+
+Every docs page is the source of truth. Prefer installing primitives over rewriting them.

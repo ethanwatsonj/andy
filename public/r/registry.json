@@ -1,0 +1,253 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "andy",
+  "homepage": "https://andy.vercel.app",
+  "items": [
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "title": "Andy theme",
+      "description": "Grabbit-derived tokens: 10-tint palettes, Geist type roles, 4pt spacing, three radii.",
+      "cssVars": {
+        "light": {
+          "background": "#F5F5F5",
+          "foreground": "#171717",
+          "card": "#FAFAFA",
+          "card-foreground": "#171717",
+          "popover": "#FAFAFA",
+          "popover-foreground": "#171717",
+          "primary": "#3B66E0",
+          "primary-foreground": "#FAFAFA",
+          "secondary": "#FAFAFA",
+          "secondary-foreground": "#171717",
+          "muted": "#EBEBEB",
+          "muted-foreground": "#737373",
+          "accent": "#EBEBEB",
+          "accent-foreground": "#171717",
+          "destructive": "#E02F2A",
+          "border": "#EBEBEB",
+          "input": "#E0E0E0",
+          "ring": "#6E95FF",
+          "sidebar": "#FAFAFA",
+          "sidebar-foreground": "#171717",
+          "sidebar-primary": "#3B66E0",
+          "sidebar-primary-foreground": "#FAFAFA",
+          "sidebar-accent": "#EBEBEB",
+          "sidebar-accent-foreground": "#171717",
+          "sidebar-border": "#EBEBEB",
+          "sidebar-ring": "#6E95FF",
+          "radius": "0.5rem",
+          "ds-neutral-100": "#FAFAFA",
+          "ds-neutral-200": "#F5F5F5",
+          "ds-neutral-300": "#EBEBEB",
+          "ds-neutral-400": "#E0E0E0",
+          "ds-neutral-500": "#A1A1A1",
+          "ds-neutral-600": "#737373",
+          "ds-neutral-700": "#525252",
+          "ds-neutral-800": "#424242",
+          "ds-neutral-900": "#2A2A2A",
+          "ds-neutral-1000": "#171717",
+          "ds-blue-500": "#6E95FF",
+          "ds-blue-600": "#5080FF",
+          "ds-blue-700": "#3B66E0"
+        },
+        "dark": {
+          "background": "#171717",
+          "foreground": "#F5F5F5",
+          "card": "#2A2A2A",
+          "card-foreground": "#F5F5F5",
+          "popover": "#2A2A2A",
+          "popover-foreground": "#F5F5F5",
+          "primary": "#3B66E0",
+          "primary-foreground": "#FAFAFA",
+          "secondary": "#171717",
+          "secondary-foreground": "#F5F5F5",
+          "muted": "#2A2A2A",
+          "muted-foreground": "#A1A1A1",
+          "accent": "#2A2A2A",
+          "accent-foreground": "#F5F5F5",
+          "destructive": "#FF4A45",
+          "border": "#525252",
+          "input": "#2A2A2A",
+          "ring": "#6E95FF",
+          "sidebar": "#2A2A2A",
+          "sidebar-foreground": "#EBEBEB",
+          "sidebar-primary": "#3B66E0",
+          "sidebar-primary-foreground": "#FAFAFA",
+          "sidebar-accent": "#424242",
+          "sidebar-accent-foreground": "#F5F5F5",
+          "sidebar-border": "#424242",
+          "sidebar-ring": "#6E95FF"
+        }
+      }
+    },
+    {
+      "name": "tokens",
+      "type": "registry:lib",
+      "title": "Andy tokens",
+      "description": "Programmatic palettes, type scale, spacing, radius, and motion.",
+      "files": [
+        {
+          "path": "lib/tokens.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Primary is blue 700. Secondary is a soft bordered fill.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/button.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Compact 32px text field.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/input.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Multi-line input with the same chrome as Input.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/textarea.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Form label.",
+      "files": [{ "path": "components/ui/label.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "Form layout primitives. Use FieldGroup + Field, never ad-hoc stacks.",
+      "registryDependencies": ["@andy/label", "@andy/separator"],
+      "files": [{ "path": "components/ui/field.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Checked state uses primary fill.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/checkbox.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Binary preference control.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/switch.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "Pressed state is muted, not primary.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/toggle.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Short status and metadata.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/badge.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Quiet content surface. Full header / content / footer composition.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/card.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Soft dividing line.",
+      "files": [{ "path": "components/ui/separator.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Peer views. Triggers always live in TabsList.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/tabs.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Modal overlay. Always include a title.",
+      "registryDependencies": ["@andy/theme", "@andy/button"],
+      "files": [{ "path": "components/ui/dialog.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "Soft elevated menu. Items stay in a Group.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/dropdown-menu.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Short label for icon-only chrome.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/tooltip.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Floating content anchored to a trigger.",
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/popover.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Loading placeholder that follows content shape.",
+      "files": [{ "path": "components/ui/skeleton.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Toast",
+      "description": "Quiet confirmation toasts.",
+      "dependencies": ["sonner", "next-themes"],
+      "registryDependencies": ["@andy/theme"],
+      "files": [{ "path": "components/ui/sonner.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "Keyboard shortcut chrome.",
+      "files": [{ "path": "components/ui/kbd.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Scrollable region with a quiet scrollbar.",
+      "files": [{ "path": "components/ui/scroll-area.tsx", "type": "registry:ui" }]
+    }
+  ]
+}

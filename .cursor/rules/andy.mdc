@@ -1,0 +1,31 @@
+---
+description: Andy design system — tokens, principles, and component rules for this repo and any project that installs @andy.
+globs: **/*.{tsx,ts,css}
+alwaysApply: true
+---
+
+# Andy
+
+Personal design system. Headless Base UI + shadcn, Geist type, Linear craft. Tokens come from Grabbit.
+
+## Visual rules
+
+- Neutral does the work. Primary blue `#3B66E0` is punctuation — one main action, focus rings, checked states.
+- Three radii only: 4 / 8 / 12 (`rounded-sm` / `rounded-md` / `rounded-xl` for panels).
+- Spacing is a 4pt grid. Use `gap-*`, never `space-y-*`.
+- Semantic tokens only: `bg-background`, `text-muted-foreground`, `border-border`, `bg-primary`. No raw `bg-blue-500`.
+- Geist Sans for UI, Geist Mono for tokens, code, and shortcuts.
+
+## Component rules
+
+- Prefer existing `@/components/ui` primitives. Do not restyle colors via `className`.
+- Forms: `FieldGroup` + `Field` + `FieldLabel`. Validation: `data-invalid` on Field, `aria-invalid` on the control.
+- Overlays always have a title (`DialogTitle`). Triggers use `render={<Button />}` (Base UI), not `asChild`.
+- Menu items live in `DropdownMenuGroup`. Tabs triggers live in `TabsList`.
+- Icons in buttons: `data-icon="inline-start"` and no sizing classes.
+- Toasts via `sonner`. Loading via `Skeleton`. Status via `Badge`.
+
+## Dual chrome
+
+- Floating tools: elevated, compact, directional shadow.
+- Content surfaces: flat, generous whitespace, primary only on the main action.
